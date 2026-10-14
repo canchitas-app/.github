@@ -1,0 +1,21 @@
+# Saltos de línea: los archivos de texto se guardan con LF dentro del repo,
+# sin importar el sistema operativo de quien commitea (evita diffs fantasma
+# entre Windows y Linux/Docker).
+* text=auto eol=lf
+
+# Binarios: git no intenta convertirlos ni mostrarlos como texto
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+*.pdf   binary
+
+# Lockfiles: GitHub los colapsa en los diffs de los PR
+pnpm-lock.yaml    linguist-generated=true
+package-lock.json linguist-generated=true

@@ -1,0 +1,44 @@
+name: ✨ Feature
+description: Funcionalidad nueva o mejora de una existente
+title: "feat: "
+labels: ["type: feature"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema o necesidad
+      description: Qué le falta al usuario (jugador, dueño de complejo o admin) y por qué importa.
+      placeholder: "Como dueño de complejo, quiero ... para ..."
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+      description: Cómo debería funcionar.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      description: Cuándo se considera terminado. Tienen que poder verificarse.
+      placeholder: |
+        - [ ] El owner puede ...
+        - [ ] Si ..., se muestra el mensaje ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: impacto
+    attributes:
+      label: Repos afectados
+      description: Si toca más de uno, abrí un issue por repo y enlazalos.
+      options:
+        - label: canchitas-api
+        - label: canchitas-mobile
+        - label: canchitas-admin
+        - label: canchitas-landing
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas

@@ -1,0 +1,27 @@
+name: 🔧 Tarea técnica
+description: Mantenimiento, refactor, infraestructura, documentación o deuda técnica
+labels: ["type: chore"]
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Qué se quiere lograr y por qué.
+    validations:
+      required: true
+  - type: textarea
+    id: tareas
+    attributes:
+      label: Tareas
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: hecho
+    attributes:
+      label: Definición de terminado
+      description: Cómo se verifica que quedó bien.
+    validations:
+      required: true

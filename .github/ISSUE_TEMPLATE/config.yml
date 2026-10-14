@@ -1,0 +1,6 @@
+# Obliga a usar uno de los formularios: sin issues en blanco.
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Cómo trabajamos (CONTRIBUTING)
+    url: https://github.com/canchitas-app/.github/blob/main/CONTRIBUTING.md
+    about: Convenciones de ramas, commits y Pull Requests.
